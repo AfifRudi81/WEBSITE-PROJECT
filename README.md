@@ -10,4 +10,4 @@ No need to rush.
 Hope this video helps you in your learning journey.
 Enjoy watching, guys! 🔥
 
-<img src="assets/preview.png" style="max-width:100%;" />
+<img src="asset/preview.png" style="max-width:100%;" />
