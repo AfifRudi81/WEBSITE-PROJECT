@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/asset/logo-1.ico" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="containers">
+      <nav class="container">
+        <div class="btn"><i class="bx bx-chevron-left"></i></div>
+        <ul class="navbar">
+          <h2 class="logo text">AvifRudi.CO</h2>
+          <p class="menu text">Menu</p>
+          <ul class="navbar">
+            <li>
+              <a href="#" class="active"
+                ><i class="bx bxs-dashboard"></i>
+                <p class="text">Dashboard</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bx bx-task"></i>
+                <p class="text">Task</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bx bx-chat"></i>
+                <p class="text">Chat</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bx bx-analyse"></i>
+                <p class="text">Analitics</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bx bx-shape-square"></i>
+                <p class="text">Team</p></a
+              >
+            </li>
+          </ul>
+        </ul>
+        <ul class="navbar">
+          <li>
+            <a href="#"
+              ><i class="bx bx-cog"></i>
+              <p class="text">Setting</p></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="bx bx-help-circle"></i>
+              <p class="text">Help</p></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="bx bx-log-out"></i>
+              <p class="text">Logout</p></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <aside>
+        <div class="container aside__top">
+          <div class="search">
+            <i class="bx bx-search-alt"></i
+            ><input type="text" placeholder="Search" /><i
+              class="bx bx-trash"
+            ></i>
+          </div>
+
+          <div class="icon">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-envelope"></i>
+            <i class="bx bxs-bell"></i>
+            <div class="user">
+              <img src="/asset/logo-user.svg" alt="" />
+              <p>
+                Avif <br />
+                Email.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container aside__down">
+          <div class="aside_text">
+            <h2 class="dash">
+              Dashboard <br />
+              <p>Just One Step Every Day</p>
+            </h2>
+            <h5 class="container import active">+ Import Data</h5>
+          </div>
+          <div class="aside_project">
+            <div class="projects">
+              <div class="container project active">
+                <div class="text_project">
+                  <h2>Total Project</h2>
+                  <i class="bx bx-cube-alt"></i>
+                </div>
+                <h1>15</h1>
+              </div>
+
+              <div class="container project">
+                <div class="text_project">
+                  <h2>End Project</h2>
+                  <i class="bx bx-cube-alt"></i>
+                </div>
+                <h1>10</h1>
+              </div>
+
+              <div class="container project">
+                <div class="text_project">
+                  <h2>Running Project</h2>
+                  <i class="bx bx-cube-alt"></i>
+                </div>
+                <h1>2</h1>
+              </div>
+
+              <div class="container project">
+                <div class="text_project">
+                  <h2>Pending Project</h2>
+                  <i class="bx bx-cube-alt"></i>
+                </div>
+                <h1>3</h1>
+              </div>
+            </div>
+            <div class="trafic">
+              <div class="container trafic1">
+                <canvas id="myChart"></canvas>
+              </div>
+              <div class="container trafic2">
+                <table>
+                  <div class="trafic2_text">
+                    <h3>
+                      TEAM <br />
+                      COMPLETED <br />
+                      PROJECT
+                    </h3>
+                  </div>
+                  <tr class="trafic2_team">
+                    <td><img src="/asset/user-1.svg" alt="" /></td>
+                    <td>Calivornia</td>
+                    <td class="details">Details</td>
+                    <td class="status">Completed</td>
+                  </tr>
+
+                  <tr class="trafic2_team">
+                    <td><img src="/asset/user-2.svg" alt="" /></td>
+                    <td>Jorsh</td>
+                    <td class="details">Details</td>
+                    <td class="status">Completed</td>
+                  </tr>
+
+                  <tr class="trafic2_team">
+                    <td><img src="/asset/user-3.svg" alt="" /></td>
+                    <td>Jordan</td>
+                    <td class="details">Details</td>
+                    <td class="status">Completed</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="container trafic3">
+                <div class="schedule_text">
+                  <h2>Schedule</h2>
+                  <p class="active">Request</p>
+                </div>
+                <div class="schedule">
+                  <div class="container schedule_item active">
+                    <i class="bx bxs-carousel"></i>
+                    <h3>
+                      SEO OPTIMIZED 1 <br /><span>Due Date: 3 Jan 2026</span>
+                    </h3>
+                  </div>
+                  <div class="container schedule_item active">
+                    <i class="bx bxs-carousel"></i>
+                    <h3>
+                      SEO OPTIMIZED 2 <br /><span>Due Date: 3 Jan 2026</span>
+                    </h3>
+                  </div>
+                  <div class="container schedule_item">
+                    <i class="bx bxs-carousel"></i>
+                    <h3>
+                      SEO OPTIMIZED 3 <br /><span>Due Date: 4 Jan 2026</span>
+                    </h3>
+                  </div>
+                  <div class="container schedule_item">
+                    <i class="bx bxs-carousel"></i>
+                    <h3>
+                      SEO OPTIMIZED 4 <br /><span>Due Date: 4 Jan 2026</span>
+                    </h3>
+                  </div>
+
+                  <div class="container schedule_item">
+                    <i class="bx bxs-carousel"></i>
+                    <h3>
+                      SEO OPTIMIZED 5 <br /><span>Due Date: 5 Jan 2026</span>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="container trafic4">
+                <div class="calendar">
+                  <div class="header">
+                    <div class="prev" id="prev">
+                      <i class="bx bx-chevron-left active"></i>
+                    </div>
+                    <div class="month-year"></div>
+                    <div class="next" id="next">
+                      <i class="bx bx-chevron-right active"></i>
+                    </div>
+                  </div>
+
+                  <div class="weekly">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thru</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                  </div>
+
+                  <div class="days" id="days"></div>
+                </div>
+
+                <div class="container trafic_tracker active">
+                  <div class="tracker">
+                    <div class="tracker_name">
+                      <p>Project Tracker</p>
+                      <p>SEO OPTIMIZED 1</p>
+                    </div>
+                    <div class="load">
+                      <div class="presentase">Completed 50%</div>
+                    </div>
+                  </div>
+
+                  <div class="tracker">
+                    <div class="tracker_name">
+                      <p>Project Tracker</p>
+                      <p>SEO OPTIMIZED 2</p>
+                    </div>
+                    <div class="load">
+                      <div class="presentase two">Completed 70%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</html>
